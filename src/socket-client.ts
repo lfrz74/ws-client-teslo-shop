@@ -3,7 +3,7 @@ import { Manager, Socket } from "socket.io-client";
 let socket : Socket;
 
 export const connectToServer = (jwtToken: string) => {
-  const manager = new Manager("http://localhost:3000/socket.io/socket.io.js", {
+  const manager = new Manager("https://teslo-shop-lfrz-0f8e4e4abfe3.herokuapp.com/socket.io/socket.io.js", {
     extraHeaders: {
       authentication: jwtToken,
     },
